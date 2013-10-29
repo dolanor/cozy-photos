@@ -20,7 +20,7 @@ module.exports = (app) ->
         uploadDir: __dirname + '/uploads'
         defer: true # don't wait for full form. Needed for progress events
         keepExtensions: true
-        maxFieldsSize: 10 * 1024 * 1024
+        maxFieldsSize: 1 * 1024 * 1024 * 1024
 
     # extend express to DRY controllers
     app.use shortcuts
