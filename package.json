@@ -1,6 +1,6 @@
 {
   "name": "cozy-photos",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A cozy application to store, browse and share your photos.",
   "main": "server.coffee",
   "dependencies": {
