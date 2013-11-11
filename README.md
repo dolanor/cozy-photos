@@ -10,7 +10,7 @@ Clone this repository, install dependencies and run server.
     cd cozy-photos
     npm install
     cd client/ && npm install && cd ..
-    coffee server
+    coffee server.coffee
 
 # About Cozy
 

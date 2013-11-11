@@ -9,8 +9,8 @@ router(app)
 
 if not module.parent
     init -> # ./init.coffee
-        port = process.env.PORT or 9113
-        host = process.env.HOST or "127.0.0.1"
+        port = process.env.PORT or 9213
+        host = process.env.HOST or "10.0.3.13"
 
         app.listen port, host, ->
             console.log "Server listening on %s:%d within %s environment",
