@@ -4,8 +4,8 @@ readFile = (photo, next) ->
     if photo.file.size > 1*1024*1024*1024
         return next t 'is too big (max 10Mo)'
 
-    if not photo.file.type.match /image\/.*/ and not photo.file.type.match /video\/.*/
-        return next t 'is not an image'
+#    if not photo.file.type.match /image\/.*/ and not photo.file.type.match /video\/.*/
+#        return next t 'is not an image'
 
     reader = new FileReader()
     photo.img = new Image()
