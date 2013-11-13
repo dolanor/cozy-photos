@@ -811,9 +811,6 @@ readFile = function(photo, next) {
   if (photo.file.size > 1 * 1024 * 1024 * 1024) {
     return next(t('is too big (max 10Mo)'));
   }
-  if (!photo.file.type.match(/image\/.*/ && !photo.file.type.match(/video\/.*/))) {
-    return next(t('is not an image'));
-  }
   reader = new FileReader();
   photo.img = new Image();
   reader.readAsDataURL(photo.file);
